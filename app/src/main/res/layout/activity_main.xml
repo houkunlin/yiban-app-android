@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.goour.skservice.yiban.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/btnStart"/>
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/btnStop"
+                android:enabled="false"/>
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/logBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/logView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

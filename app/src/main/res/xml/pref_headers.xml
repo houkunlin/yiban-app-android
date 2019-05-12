@@ -1,0 +1,50 @@
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <!--<header-->
+        <!--android:fragment="cn.goour.skservice.yiban.SettingsActivity$GeneralPreferenceFragment"-->
+        <!--android:icon="@drawable/ic_info_black_24dp"-->
+        <!--android:title="登录设置1" />-->
+
+    <header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$LoginSet"
+        android:title="登录设置" />
+
+    <header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$CheckInSet"
+        android:title="签到设置" />
+
+    <header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$FeedsAddSet"
+        android:title="发布动态设置" />
+
+    <header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$FeedsZTSet"
+        android:title="点赞同情动态设置" />
+
+
+    <header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$ChatSet"
+        android:title="聊天设置" />
+
+    <header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$ElseSet"
+        android:title="其他设置" />
+
+    <header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$GPSSet"
+        android:title="地理位置设置" />
+    <!--<header
+        android:fragment="cn.goour.skservice.yiban.SettingsActivity$DataSyncPreferenceFragment"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="评论动态设置" />-->
+</preference-headers>

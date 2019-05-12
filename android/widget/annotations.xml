@@ -1,0 +1,13 @@
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<root>
+    <item name='android.widget.LinearLayout'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

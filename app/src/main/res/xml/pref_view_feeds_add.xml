@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="feedsAdd"
+        android:summary="定时随机发布动态"
+        android:title="自动发布动态" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="5000"
+        android:dependency="feedsAdd"
+        android:inputType="number"
+        android:key="feedsTimes"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="动态发布时间间隔(ms)" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="20"
+        android:dependency="feedsAdd"
+        android:inputType="number"
+        android:key="feedsNum"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="发布动态条数(次数)" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="feedsAdd"
+        android:key="feedsToWeiBo"
+        android:summary="同步动态到中职社区微博"
+        android:title="动态同步到微博" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="feedsAdd"
+        android:key="feedsSourceForSD"
+        android:summary="自定义发布动态的内容"
+        android:title="自定义动态内容" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue=""
+        android:dependency="feedsSourceForSD"
+        android:inputType="text"
+        android:key="feedsSourcePath"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="自定义动态内容文件路径" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="feedsAdd"
+        android:key="feedsGps"
+        android:summary="显示自定义的地理位置"
+        android:title="显示地理位置" />
+</PreferenceScreen>

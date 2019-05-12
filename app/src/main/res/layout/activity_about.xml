@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于小K服务"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="侯坤林©版权所有"
+        android:textSize="18dp"
+        android:gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+</LinearLayout>

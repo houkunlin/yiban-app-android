@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="msgSend"
+        android:summary="定时发送聊天消息"
+        android:title="自动发送消息" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="5000"
+        android:dependency="msgSend"
+        android:inputType="number"
+        android:key="msgTimes"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="发送消息时间间隔(ms)" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="50"
+        android:dependency="msgSend"
+        android:inputType="number"
+        android:key="msgNum"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="发送消息次数" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="msgSend"
+        android:key="msgSourceForSD"
+        android:summary="自定义发布消息的内容"
+        android:title="自定义消息内容" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue=""
+        android:dependency="msgSourceForSD"
+        android:inputType="text"
+        android:key="msgSourcePath"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="自定义消息内容文件路径" />
+    <Preference
+        android:defaultValue=""
+        android:dependency="msgSend"
+        android:key="group"
+        android:singleLine="true"
+        android:title="聊天对象(群组)"
+        android:summary="请选择群组聊天对象"
+        />
+</PreferenceScreen>

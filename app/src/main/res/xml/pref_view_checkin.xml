@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="checkIn"
+        android:summary="启动运行时自动检测签到状态和签到"
+        android:title="自动签到" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="checkIn"
+        android:key="checkInToFeeds"
+        android:summary="签到成功时自动同步签到信息到动态"
+        android:title="签到信息同步到动态" />
+
+</PreferenceScreen>

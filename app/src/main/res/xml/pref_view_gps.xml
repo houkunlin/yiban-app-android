@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="天安门城楼"
+        android:inputType="text"
+        android:key="gpsAddress"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="地理位置名称" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="39.908710"
+        android:inputType="text"
+        android:key="gpsLat"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="纬度(Lat)" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="116.397500"
+        android:inputType="text"
+        android:key="gpsLng"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="经度(Lng)" />
+    <Preference
+        android:key="goMap"
+        android:summary="从地图中选取位置"
+        android:title="地图选点" />
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017.
+  ~ 网址：http://goour.cn
+  ~ 作者：侯坤林
+  ~ 邮箱：lscode@qq.com
+  ~ 侯坤林 版权所有
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:enabled="false"
+        android:key="visitOrgHome"
+        android:summary="[没用的功能]每次启动运行后仅运行一次，没卵用，没网薪"
+        android:title="访问机构号主页" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:enabled="false"
+        android:key="visitGroupHome"
+        android:summary="[没用的功能]每次启动运行后仅运行一次，没卵用，没网薪"
+        android:title="访问群组主页" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="visitFriendHome"
+        android:summary="每次启动运行后仅运行一次，没卵用，没网薪"
+        android:title="访问好友主页" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="visitFriendHome"
+        android:key="feedsZTInit"
+        android:summary="将会获取每个好友的前N条动态"
+        android:title="初始化点赞同情" />
+</PreferenceScreen>
